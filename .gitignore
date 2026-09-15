@@ -1,0 +1,81 @@
+# ============================================================
+# Orbit — AI-Native Mini CRM
+# ============================================================
+
+# ----- Python -----------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+env/
+venv/
+.venv/
+ENV/
+.tox/
+.nox/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.log
+celerybeat-schedule*
+celerybeat.pid
+
+# ----- Node / Next.js ----------------------------------------
+node_modules/
+.next/
+out/
+.turbo/
+.vercel/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm
+.yarn/
+
+# ----- Environment & Secrets ---------------------------------
+.env
+.env.*
+!.env.example
+!.env.local.example
+*.pem
+*.key
+
+# ----- Local dev artifacts -----------------------------------
+# fastembed ONNX model download
+.model_cache/
+# output of scripts/smtp_capture.py
+.captured_mail/
+# portable Redis binaries used by scripts/start.ps1
+.redis/
+dump.rdb
+
+# ----- OS ----------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----- IDEs / tools ------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+.claude/settings.local.json
+
+# ----- Docker ------------------------------------------------
+docker-compose.override.yml
+
+# ----- Misc --------------------------------------------------
+*.sqlite3
+*.db
+*.zip

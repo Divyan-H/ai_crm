@@ -1,0 +1,23 @@
+# ============================================================
+# Orbit — all backend Python dependencies
+# ============================================================
+#
+# Installs both backend services (CRM + Channel) plus the test/lint tooling
+# into ONE virtualenv — the simplest local setup:
+#
+#   python -m venv .venv
+#   .venv\Scripts\activate            # Windows
+#   source .venv/bin/activate         # macOS / Linux
+#   pip install -r requirements.txt
+#
+# Version pins live in each service's own files, which are also what the
+# Dockerfiles use. Edit those, not this file:
+#   backend/crm/requirements.txt        runtime deps (FastAPI, Celery, Supabase, Groq, pandas, fastembed, ...)
+#   backend/channel/requirements.txt    runtime deps (FastAPI, Celery, httpx)
+#   backend/*/requirements-dev.txt      runtime deps + pytest + ruff
+
+-r backend/crm/requirements-dev.txt
+-r backend/channel/requirements-dev.txt
+
+# Optional — local SMTP capture server for testing email (scripts/smtp_capture.py)
+# aiosmtpd==1.4.6

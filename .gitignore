@@ -70,7 +70,6 @@ desktop.ini
 .idea/
 *.swp
 *.swo
-.claude/settings.local.json
 
 # ----- Docker ------------------------------------------------
 docker-compose.override.yml

@@ -585,6 +585,14 @@ With `make` available, `make test` and `make lint` run the same checks. GitHub A
 
 ---
 
+## 👨‍💻 Author
+
+**Divyan-H**
+
+* GitHub: [@Divyan-H](https://github.com/Divyan-H)
+
+---
+
 ## ⭐ Acknowledgements
 
 This AI CRM represents an AI-first approach to modern customer relationship management, combining customer intelligence, automation, and data-driven decision-making into a unified platform.
